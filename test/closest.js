@@ -19,7 +19,7 @@ describe('closest', function() {
 			assert.ok(resp instanceof Object);
 
 			assert.equal(typeof resp.url, 'string');
-			assert.equal(typeof resp.timestamp, 'string');
+			assert.equal(typeof resp.timestamp, 'number');
 
 			done();
 		});
