@@ -11,7 +11,7 @@ Extended Internet Wayback Machine Client
 Get the timeline with all the snapshots (mementos) of a given URL taken by http://web.archive.org
 
 ```js
-var wayback = require('wayback-machine');
+const wayback = require('wayback-machine-e');
 
 wayback.getTimeline(url, function(err, timeline) {
   if (err) {
@@ -54,7 +54,7 @@ Timeline example:
 Get the latest URL snapshot using Wayback Availability JSON API
 
 ```js
-var wayback = require('wayback-machine');
+const wayback = require('wayback-machine-e');
 
 wayback.getClosest(url, function(err, closest) {
   if (err) {
@@ -74,4 +74,29 @@ Example:
   url: 'http://web.archive.org/web/20111008092403/http://macbre.net:80/',
   timestamp: '20111008092403',
   status: '200' }
+```
+
+### `getWebpage`
+
+Get the html of a given Wayback URL
+
+```js
+const wayback = require("wayback-mashine-e")
+
+wayback.getWebpage(url, (err, data) => {
+  if(err) {
+  	console.error(err);
+  	return;
+  }
+
+  console.log('The html for url', url, 'is', data.html.length, 'characters long')
+})
+```
+
+Example:
+
+```
+{ archived: 20111008092000,
+  retreaved: 1648821878000,
+  html: "<!doctype html><head></head>\n<body>Hi!</body>"}
 ```
