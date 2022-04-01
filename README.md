@@ -47,7 +47,7 @@ Timeline example:
        time: Sat Aug 01 2015 23:28:11 GMT+0200 (CEST) } ] }
 ```
 
-### `getLatest`
+### `getClosest`
 
 > [Docs](https://archive.org/help/wayback_api.php)
 
@@ -56,14 +56,14 @@ Get the latest URL snapshot using Wayback Availability JSON API
 ```js
 var wayback = require('wayback-machine');
 
-wayback.getLatest(url, function(err, latest) {
+wayback.getClosest(url, function(err, closest) {
   if (err) {
     console.error(err);
     return;
   }
 
-  console.log('The latest snapshot for <%s>:', url);
-  console.log(latest);
+  console.log('The closest snapshot for <%s>:', url);
+  console.log(closest);
 });
 ```
 
