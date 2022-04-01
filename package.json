@@ -9,19 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/macbre/wayback-machine.git"
+    "url": "git+https://github.com/Eds-trash-can/wayback-machine"
   },
   "keywords": [
     "archive",
     "memento",
     "wayback"
   ],
-  "author": "Maciej Brencz <maciej.brencz@gmail.com> (https://github.com/macbre)",
+  "author": "Maciej Brencz <maciej.brencz@gmail.com> (https://github.com/macbre) (& derzombiiie)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/macbre/wayback-machine/issues"
+    "url": "https://github.com/Eds-trash-can/wayback-machine"
   },
-  "homepage": "https://github.com/macbre/wayback-machine#readme",
+  "homepage": "https://github.com/Eds-trash-can/wayback-machine#readme",
   "devDependencies": {
     "jshint": "^2.9.4",
     "mocha": "^3.2.0"

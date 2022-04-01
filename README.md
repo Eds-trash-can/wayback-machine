@@ -1,9 +1,6 @@
-# wayback-machine
+# wayback-machine-extended
 
-[![NPM version](https://badge.fury.io/js/wayback-machine.png)](http://badge.fury.io/js/wayback-machine)
-[![Build Status](https://api.travis-ci.org/macbre/wayback-machine.png)](http://travis-ci.org/macbre/wayback-machine)
-
-Internet Wayback Machine Client
+Extended Internet Wayback Machine Client
 
 ## API
 
@@ -50,7 +47,7 @@ Timeline example:
        time: Sat Aug 01 2015 23:28:11 GMT+0200 (CEST) } ] }
 ```
 
-### `getClosest`
+### `getLatest`
 
 > [Docs](https://archive.org/help/wayback_api.php)
 
@@ -59,18 +56,18 @@ Get the latest URL snapshot using Wayback Availability JSON API
 ```js
 var wayback = require('wayback-machine');
 
-wayback.getClosest(url, function(err, closest) {
+wayback.getLatest(url, function(err, latest) {
   if (err) {
     console.error(err);
     return;
   }
 
-  console.log('The closest snapshot for <%s>:', url);
-  console.log(closest);
+  console.log('The latest snapshot for <%s>:', url);
+  console.log(latest);
 });
 ```
 
-Closest example:
+Example:
 
 ```
 { available: true,
